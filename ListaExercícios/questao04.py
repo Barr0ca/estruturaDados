@@ -1,4 +1,5 @@
 from math import ceil
+from random import randint
 
 
 def shellSort(list):
@@ -16,9 +17,13 @@ def shellSort(list):
     return list
 
 
-listaD = [3, 1, 5, 10, 15, 90, 2]
+for i in range(5):
+    dia = randint(1, 30)
+    mes = randint(1, 12)
+
+lista = []
 print("lista desordenada")
-print(listaD)
-listaO = shellSort(listaD)
+print(lista)
+listaO = shellSort(lista)
 print("lista ordenada")
 print(listaO)
