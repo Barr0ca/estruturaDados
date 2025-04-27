@@ -1,6 +1,8 @@
+# Questão elaborada com exemplo de insertion sort feito em sala apenas com algumas alterações
+
 def insertion(list, index):
     while index > 0:
-        if list[index][1] < list[index - 1][1]:
+        if list[index][1] < list[index - 1][1]: #
             aux = list[index]
             list[index] = list[index - 1]
             list[index - 1] = aux

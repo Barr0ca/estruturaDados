@@ -1,5 +1,8 @@
+# Questão elaborada com exemplo de insertion sort feito em sala apenas com algumas alterações
+
 from math import ceil
 from random import randint
+from datetime import datetime
 
 
 def shellSort(list):
@@ -17,13 +20,22 @@ def shellSort(list):
     return list
 
 
-for i in range(5):
-    dia = randint(1, 30)
-    mes = randint(1, 12)
+lista = [] 
 
-lista = []
+# Esquema para adicionar 5 datas aleatórias
+for i in range(5):
+    dia = randint(1, 28)
+    mes = randint(1, 12)
+    ano = randint(1999, 2025)
+    data = (f'{dia}/{mes}/{ano}')
+    lista.append(datetime.strptime(data, "%d/%m/%Y")) # As datas são adicionadas à lista no formato datetime 
+
 print("lista desordenada")
-print(lista)
+for data in lista:
+    print(data.strftime("%d/%m/%Y")) # Print da lista com a formatação pedida
+
 listaO = shellSort(lista)
+
 print("lista ordenada")
-print(listaO)
+for data in listaO:
+    print(data.strftime("%d/%m/%Y"))

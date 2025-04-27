@@ -1,3 +1,5 @@
+# Questão elaborada com exemplo de insertion sort feito em sala apenas com algumas alterações
+
 from math import ceil
 import time
 from random import randint

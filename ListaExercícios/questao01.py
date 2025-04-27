@@ -1,4 +1,4 @@
-# Questão elaborada com exemplo de insertion sort feito em sala apenas com alguams alterações
+# Questão elaborada com exemplo de insertion sort feito em sala apenas com algumas alterações
 
 def insertion(list, index):
     while index > 0:
