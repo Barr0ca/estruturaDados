@@ -2,7 +2,9 @@
 
 def insertion(list, index):
     while index > 0:
-        if list[index][1] < list[index - 1][1]: #
+        if list[index][1] < list[index - 1][1]: 
+            # Alteração na frente dos indexes para sinalizar o elemento da tupla 
+            # (0, 1) elemento 1 da tupla (nome, idade) nesse caso é idade
             aux = list[index]
             list[index] = list[index - 1]
             list[index - 1] = aux
