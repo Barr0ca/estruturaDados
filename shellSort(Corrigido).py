@@ -7,8 +7,7 @@ def shellSort(list):
         gap += 1
     while gap > 0:
         for i in range(0, len(list)-gap):
-            valorAtual = list[i]
-            if list[i+gap] < valorAtual:
+            if list[i+gap] < list[i]:
                 aux = list[i]
                 list[i] = list[i+gap]
                 list[i+gap] = aux
