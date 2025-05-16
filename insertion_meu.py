@@ -16,9 +16,9 @@ def insertionSort(list):
     return list
 
 
-listaD = [3, 1, 5, 10, 15, 90, 2]
-print("lista desordenada")
-print(listaD)
-listaO = insertionSort(listaD)
-print("lista ordenada")
-print(listaO)
+# listaD = [3, 1, 5, 10, 15, 90, 2]
+# print("lista desordenada")
+# print(listaD)
+# listaO = insertionSort(listaD)
+# print("lista ordenada")
+# print(listaO)
