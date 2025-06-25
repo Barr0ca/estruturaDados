@@ -1,3 +1,5 @@
+# Cria uma hashtable com 3 pessoas
+
 ht = {}
 for elementos in range(3):
     nome = input('Nome: ')

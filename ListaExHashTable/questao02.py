@@ -1,3 +1,5 @@
+# Imprime a idade de uma pessoa da hashtable
+
 ht = {}
 for elementos in range(3):
     nome = input('Nome: ')

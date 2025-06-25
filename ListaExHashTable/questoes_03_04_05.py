@@ -1,3 +1,8 @@
+# Criando uma hashtable com entrada de valores (nomes) e suas chaves (idades)
+# Adiciona e remove uma pessoa na hashtable
+# Verifica a existência de uma pessoa na hashtable
+# Imprime as pessoas em um loop 
+
 ht = {}
 def add_pessoa(ht: dict):
     nome = input('Nome: ')
