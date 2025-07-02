@@ -1,12 +1,24 @@
 def anagramas(lista: list):
-    lista_ordenada1 = sorted(lista)
-    lista_ordenada2 = sorted(lista)
-    for palavra1 in lista_ordenada1:
-        for palavra2 in lista_ordenada2:
-            verifica_anagrama
+    ht = {}
 
-def verifica_anagrama(a,b):
+    return ht
+
+
+def verifica_anagrama(a, b):
     if sorted(a) == sorted(b):
         return True
     else:
         return False
+
+
+palavras = ['amor', 'roma', 'batacae', 'tesoura', 'abacate']
+ht = {}
+chaves = []
+for palavra in palavras:
+    if palavra not in ht:
+        palavraS = sorted(palavra)
+        ht[palavraS] = 1
+        chaves.append(palavra)
+print(ht, chaves)
+
+# print(anagramas(palavras))
