@@ -2,6 +2,7 @@ from binarytree import bst, Node
 
 arvore = bst(height=2, is_perfect=True)
 
+
 def insercao(no, valor):
     if no.value != valor:
         if valor > no.value:
@@ -14,6 +15,8 @@ def insercao(no, valor):
                 insercao(no.left, valor)
             else:
                 no.left = Node(valor)
-    return arvore
 
-print(insercao(arvore, 10))
+insercao(arvore, 5)
+insercao(arvore, 2)
+
+print(arvore)

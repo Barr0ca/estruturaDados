@@ -2,14 +2,14 @@ from binarytree import bst
 
 arvore = bst(height=2, is_perfect=True)
 
-def visita_no(no):
-    if no.left:
-        visita_no(no.right)
+
+def pos_order(no):
+    if no:
+        pos_order(no.left)
+        pos_order(no.right)
         print(no.value)
-        visita_no(no.left)
-    else:
-        print(no.value)
+
 
 print(arvore)
 
-visita_no(arvore)
+pos_order(arvore)
