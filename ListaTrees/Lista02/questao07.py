@@ -1,3 +1,5 @@
+# Verificando a soma de um caminho para um valor
+
 from binarytree import bst
 
 arvore = bst(height=2, is_perfect=True)
@@ -16,6 +18,7 @@ def verifica_caminho_valor(no, soma_alvo, soma_atual=0):
 
     # Verifica recursivamente nos dois lados
     return verifica_caminho_valor(no.left, soma_alvo, soma_atual) or verifica_caminho_valor(no.right, soma_alvo, soma_atual)
+
 
 print(arvore)
 
